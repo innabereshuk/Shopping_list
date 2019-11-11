@@ -12,42 +12,42 @@ a, button {
 }
 
 body{
-    width: 100vw;
-    height: 100vh;
+    width: 1100px;
+    width: 99%;;
     background: black;
 }
 
 section {
-    width: 70%;
-    height: 85%;
     margin: 5% 16%;
     border: 23px solid white;
     
 }
 
 #box {
-    height: 100%;
     background: #3c3f44;
 }
 
 .box {
-    height: 16%;
     background: #4a4f57;
+   
+}
+
+.h1 {
+    padding: 20px 0 60px 0;
 }
 
 div .box.box1 {
-    height: 79%;
     background: #3c3f44;
+    margin: 0;
 }
 
 .tab {
-    height: 60%;
-    width: 65%;
-    margin: 40px 16%;
+    padding: 40px 16%;
 }
 
+
 .box.box1 .tab .stroka:hover {
-    background: #635e78;
+    background: #860606;
     border-top: 3px solid white;
     border-bottom: 3px solid white;
 
@@ -63,29 +63,28 @@ div .box.box1 {
 
 div.stroka.color {
     background: #89839f;
-            
+        
 }
 
 
 div .button {
-    width: 65%;
-    height: 13%;
     background: #4a4f57;
-    margin: 0 16%;
     text-align: center;
     font-size: 1.2em;
     padding: 24.5px;
 }
 
 div .button:hover {
-    background: #4a4f70;
+    background: #220c4b;
     border-bottom: 3px solid white;
     border-top: 3px solid white;
 }
 
-a {
-    text-decoration: none;
+footer {
+    padding: 20px 16% 80px 16%;
 }
+
+    
 
 
 /* Text */
@@ -93,17 +92,25 @@ a {
 span {
     font-size: 1.3em;
     color: white;
-    padding: 19px 5px;
-}
+ }
 
 .col {
     font-size: 0.9em;
     font-weight: 100;
+    color: #b3b4c3;
+}
+
+input:checked + span .gold {
+    color: #b3b4c3;
 }
 
 input:checked + span {
-   text-decoration: line-through #a5a2b5;
-   
+     text-decoration: line-through #b3b4c3;
+}
+
+
+label {
+    display: block;
 }
 
 
@@ -124,6 +131,10 @@ h2 {
     font-weight: 400;
     font-size: 1.5em;
     margin: -30px;
+}
+
+a {
+    text-decoration: none;
 }
 
 
