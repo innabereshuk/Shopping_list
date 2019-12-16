@@ -1,87 +1,116 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700&display=swap');
+
 * {
     box-sizing: border-box;
 }
-
-body {
-    font-family: Arial, Helvetica, sans-serif, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    line-height: 1.2;
-}
-
 a, button {
     transition: all .4s ease-in;
+    text-decoration: none;
+}
+
+html {
+    height: 100%;
+    font-size: 10px;
 }
 
 body{
-    width: 1100px;
-    width: 99%;;
-    background: black;
-}
-
-section {
-    margin: 5% 16%;
-    border: 23px solid white;
-    
-}
-
-#box {
-    background: #3c3f44;
-}
-
-.box {
-    background: #4a4f57;
-   
-}
-
-.h1 {
-    padding: 20px 0 60px 0;
-}
-
-div .box.box1 {
-    background: #3c3f44;
+    max-height: 100%;
     margin: 0;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.2;
+    font-size: 1.4rem;
+    font-weight: 400;
+    background: #3c3f44;
+    border: 2.3rem solid white;
+    overflow: hidden;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1140px;
+}
+
+header {
+    background: #4a4f57;
 }
 
 .tab {
-    padding: 40px 16%;
+   padding: 5rem 16%;
 }
 
-
-.box.box1 .tab .stroka:hover {
-    background: #860606;
-    border-top: 3px solid white;
-    border-bottom: 3px solid white;
-
+.tab .tab__item:nth-child(odd) {
+    list-style: none;
+    border-top: 3px solid #797594;
+    border-bottom: 3px solid #797594;
 }
 
-.stroka {
-    height: 61.05px;
-    padding: 0;
+.tab .tab__item:nth-child(even) {
+    list-style: none;
+    border-top: 3px solid #89839f;
+    border-bottom: 3px solid #89839f;
+}
+
+label {
+    display: block;
+}
+
+.tab .tab__item:nth-child(odd) {
     background: #797594;
-    padding: 13px;
+    padding: 1.5rem;
 
 }
 
-div.stroka.color {
+.tab .tab__item:nth-child(even){
     background: #89839f;
+    padding: 1.5rem;
         
 }
 
+.tab .tab__item:hover,
+.tab .tab__item:focus,
+.tab .tab__item:active,
+.tab .tab__item:hover,
+.tab .tab__item:focus,
+.tab .tab__item:active {
+    background: #635e78;
+    border-top: 3px solid white;
+    border-bottom: 3px solid white;
+}
 
-div .button {
+.button {
+    display: block;
     background: #4a4f57;
     text-align: center;
     font-size: 1.2em;
-    padding: 24.5px;
+    border-bottom: 3px solid #4a4f57;
+    border-top: 3px solid #4a4f57;
 }
 
-div .button:hover {
-    background: #220c4b;
+.button:hover {
+    background: #ef7d7b;
     border-bottom: 3px solid white;
     border-top: 3px solid white;
 }
 
+a .subtitle {
+    padding: 1rem;
+    padding: 1.5rem;
+}
+
+a .subtitle:hover,
+a .subtitle:focus,
+a .subtitle:active {
+    color: #4a4f57;
+}
+
+a .subtitle::after {
+    content: ':)';
+    display: inline-block;
+    margin: 0 1.5rem;
+}
+
 footer {
-    padding: 20px 16% 80px 16%;
+    padding: 0 16% 25rem 16%;
 }
 
     
@@ -89,52 +118,42 @@ footer {
 
 /* Text */
 
-span {
-    font-size: 1.3em;
+.gold {
+    font-size: 1.8em;
     color: white;
  }
 
 .col {
-    font-size: 0.9em;
+    font-size: 1em;
     font-weight: 100;
-    color: #b3b4c3;
+    color: rgba(255, 255, 255, .7);
 }
 
-input:checked + span .gold {
-    color: #b3b4c3;
+input:checked ~ span {
+     text-decoration: line-through rgba(255, 255, 255, .6);
+     color: rgba(255, 255, 255, .6);
 }
 
-input:checked + span {
-     text-decoration: line-through #b3b4c3;
+input:checked ~ .tab__item {
+    background: #860606;
 }
 
-
-label {
-    display: block;
+.title {
+    font-size: 5.4rem;
+   padding: 3rem 0 0 ;
+   font-weight: 700;
 }
 
+.subtitle {
+    font-size: 3.4rem;
+    font-weight: 400;
+    padding: 0 0 3rem;
+}
 
-h1, h2, span.bon {
+.title, .subtitle, .button {
     color: #ef7d7b;
     margin: 0;
     text-align: center;
-}
-
-H1 {
- font-weight: bold;
- font-size: 2.2em;
- padding: 20px;
-}
-
-
-h2 {
-    font-weight: 400;
-    font-size: 1.5em;
-    margin: -30px;
-}
-
-a {
-    text-decoration: none;
 }
 
 
