@@ -35,7 +35,7 @@ header {
 }
 
 .tab {
-   padding: 5rem 16%;
+   padding: 5rem 0;
 }
 
 .tab .tab__item:nth-child(odd) {
@@ -110,7 +110,7 @@ a .subtitle::after {
 }
 
 footer {
-    padding: 0 16% 25rem 16%;
+    padding: 0 7% 25rem 7%;
 }
 
     
