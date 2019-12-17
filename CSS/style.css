@@ -22,8 +22,7 @@ body{
     font-weight: 400;
     background: #3c3f44;
     border: 2.3rem solid white;
-    overflow: hidden;
-}
+ }
 
 .container {
     margin: 0 auto;
